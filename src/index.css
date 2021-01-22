@@ -12,7 +12,25 @@ code {
     monospace;
 }
 
-.nasaPic {
+.imageContainer {
   width: 600px;
   height: 600px;
+}
+
+.hide {
+  display: none;
+}
+.hd {
+  width: auto;
+  height: auto;
+}
+.nasaPic {
+  object-fit: contain;
+  height: 100%;
+  width: auto;
+}
+.flexDiv {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
