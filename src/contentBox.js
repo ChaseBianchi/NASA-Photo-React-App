@@ -20,6 +20,7 @@ const StyledContent = styled.div`
     }
 `
 
+
 export default function ContentBox(param){
     const {nasaData} = param
     // const [fullScreen, setFullScreen] = useState(false)
