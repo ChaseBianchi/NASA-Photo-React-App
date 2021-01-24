@@ -1,4 +1,6 @@
 body {
+  color: #fff9f9;
+    background-color: #182b44;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -13,8 +15,8 @@ code {
 }
 
 .imageContainer {
-  width: 600px;
-  height: 600px;
+  width: 90%;
+  height: auto;
 }
 
 .hide {
@@ -26,11 +28,12 @@ code {
 }
 .nasaPic {
   object-fit: contain;
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 90%;
 }
 .flexDiv {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  justify-content: center;
 }

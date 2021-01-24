@@ -1,4 +1,24 @@
 import React, {useEffect, useState} from 'react'
+import styled from 'styled-components'
+
+const StyledContent = styled.div`
+    color: #fff9f9;
+    background-color: #182b44;
+    padding: 1%;
+    .contentDiv {
+    }
+    .infoContainer {
+        width: 100%;
+        // border: 1px solid white;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    p{
+        width: 90%;
+        text-align: center;
+    }
+`
 
 export default function ContentBox(param){
     const {nasaData} = param
@@ -55,8 +75,11 @@ export default function ContentBox(param){
           }
     }
 
+    
+
+
     return (
-        <div className='contentDiv'>
+        <StyledContent className='contentDiv'>
             <h2>{nasaData.title}</h2>
             <div className='flexDiv'>
                 <div className='imageContainer'>
@@ -68,7 +91,7 @@ export default function ContentBox(param){
                 <p>{nasaData.explanation}</p>
                 </div>
             </div>
-        </div>
+        </StyledContent>
         
     )
 }
